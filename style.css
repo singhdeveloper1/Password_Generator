@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right bottom, #ffa585,#45c5d8);
+    color: #fff;
+    font-weight: 600;
+}
+.container{
+    border: 2px solid white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    padding: 28px 32px;
+    background-color: transparent;
+    box-shadow: 8px 8px 4px#3146bc, 8px 8px 0px #189df6;
+}
+.container h1{
+    font-size: 1.4rem;
+    margin-block: 8px;
+}
+.inputBox{
+    /* display: flex; */
+    position: relative;
+}
+.inputBox span{
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    color: #000000;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.passBox{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin-block: 8px;
+    font-size: 18px;
+    border-radius: 8px;
+    background-color: #fff;
+    text-overflow: ellipsis;
+    color: rgb(151, 21, 198);
+
+}
+.row{
+    display: flex;
+    margin-block: 12px;
+}
+.row p , .row label{
+    flex-basis: 95%;
+    /* font-size: 1.1rem; */
+}
+.row input[type="checkbox"]{
+    width: 18px;
+    height: 20px;
+}
+.genBtn{
+    background-color: rgb(26, 126, 213);
+    color: #fff;
+    margin-block: 8px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    /* transition: tranform .5s; */
+    cursor: pointer;
+}
+
+.genBtn:hover{
+    background-color: rgb(93, 57, 200);
+    transform: scale(1.02);
+}
+
+
